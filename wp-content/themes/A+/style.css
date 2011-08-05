@@ -1,0 +1,353 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/* *********************** GENERAL SETTINGS     *********************** */
+body {
+	font-family:  Arial, verdana,Tahoma,Helvetica, sans-serif;
+	color: #fff;
+	background: #3c3c3c;
+	font-size:12px;
+}
+
+html {
+	overflow: scroll;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ClearLeft{
+	clear: left;
+}
+
+/* CSS global reset for all browsers */ 
+* { padding: 0px; margin: 0px; }
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+a {color: #fff; text-decoration: none;}
+a:hover {color: #b00000; }
+a.image, a.image:hover, a img  {border:0;}
+ul ,li{
+	list-style: none;
+}
+.menu li {
+	padding: 2px 0px 2px 13px;
+	line-height: 20px;
+	
+}
+
+#main_content ul li, #main_content2 ul li {
+	width: 100%;
+}
+	
+ol {
+	padding: 5px 25px;
+}
+
+fieldset {
+	width: 95%;
+	padding: 5px;
+	border: 1px solid #eeeeee;
+}
+.both {
+	clear: both;
+}
+
+input, select, label {
+	vertical-align: middle;
+}
+
+p {
+	padding: 5px 0px;
+}
+
+/*layout**/
+#Wrapper {
+	margin:0 auto;
+	width:900px;
+	background:#3c3c3c;
+}
+
+h1 {
+	font-size:16px;
+	color:#fe0000;
+	text-transform:uppercase;
+	padding-bottom:10px;
+}
+
+#UIContent {
+	padding: 0 6px;
+	overflow:hidden;
+	clear:both;
+}
+
+.UINavigation {
+	height: 50px;
+}
+
+.navboxwrapleft {
+	float:left;
+	width:130px;
+	margin-right: 5px;
+}
+
+.home .navboxwrapleft {
+	float:none;
+	width:0;
+	margin-right: 5px;
+}
+
+.menumenunavigation {
+	height: 30px;
+}
+.menumenunavigation li {
+	float:left;
+	padding: 10px;
+}
+
+.menumenunavigation li  a {
+	text-transform:uppercase;
+	color:#fff;
+}
+
+.UIMain {
+	min-height: 350px;
+	margin: 0 0px 0 140px;
+}
+.home .UIMain {
+	margin: 0px;
+	text-align:center;
+}
+
+.home .UIMain  img {
+	margin-top:70px;
+}
+
+.navboxwrapright {
+	float:right;
+	width:193px;
+}
+
+
+
+/* show cateogry */
+.MainCotent  {
+	padding:2px 5px 10px 2px;
+	width:694px;
+	height:341px;
+	background:#6a6a6a url(images/bgContent.png) left top;
+	border:1px solid #505050;
+	
+}
+
+.categoryCT1 {
+	padding:2px 0px 10px 2px;
+	width:714px;
+}
+.readmore {
+	float:right;
+	width:68px;
+	display:block;
+	height:14px;
+	background:#6a6a6a url(images/chitiet.png) no-repeat left top;margin-top:28px;
+}	
+.readmore:hover {
+	padding-left:5px;
+	
+}
+.categoryCT .Post {
+	float:left;
+	width:217px;
+	height:162px;
+	padding:7px 3px 7px 11px;
+}
+
+.categoryCT .Post .thumb1 img:hover {opacity:0.8;}
+.category .Post,.categoryCT1 .Post{
+	height:88px;	
+}
+.TopPost h2 {
+	margin-bottom: 10px;
+}
+.thumb img ,.categoryCT1 .thumb1 img{
+	text-align:center;
+	border:1px solid #eee;
+	float:left;	
+	margin-right:10px;
+	width:114px;
+	height:80px;
+}
+.categoryCT1 .thumb1 img {margin:0;}.categoryCT .thumb1 img{border:1px solid white;}
+.thumb img:hover{
+opacity:0.8;
+}
+
+.children{
+	margin-left:10px;
+}
+.PostSingleDefault {
+	padding:10px;	
+}
+
+
+/*footer*/
+
+#footer {
+	text-align:center;
+	height:90px;
+	padding-top:10px;
+	clear:both;
+	color:white;
+}
+
+/*_____________________________________________ Start - Projects - jCarouselLiteDemo _____________________________________________*/
+
+#jCarouselLiteDemo .carousel  {
+    padding: 10px 0 0 0;
+    margin: 0 0 20px 10px;
+    position: relative;     
+}
+    #jCarouselLiteDemo .digg {
+        position: absolute;
+        left: 610px;
+        top: 110px;
+    }
+    #jCarouselLiteDemo .main {
+        margin-left: 40px;
+    }
+
+    #jCarouselLiteDemo .demo em {
+        color: #FF3300;
+        font-weight: bold;
+        font-size: 60%;        
+        font-style: normal;
+    }
+    #jCarouselLiteDemo .carousel button { /*Don't remove this. we still use this for individual demos. only the front pages use images as of now*/
+        float: left;
+    }              
+    #jCarouselLiteDemo .carousel a.prev, #jCarouselLiteDemo .carousel a.next {
+        display: block;
+        float: left;
+        width: 30px;
+        height: 143px;
+        text-decoration: none;
+        background: url("/image/imageNavLeft.gif") left 60px no-repeat;
+    }
+        #jCarouselLiteDemo .carousel a.next {
+            background: url("/image/imageNavRight.gif") right 60px no-repeat;
+        }
+            #jCarouselLiteDemo .carousel a.next:hover {
+                background-image: url("/image/imageNavRightHover.gif");
+            }
+            #jCarouselLiteDemo .carousel a.prev:hover {
+                background-image: url("/image/imageNavLeftHover.gif");
+            }    
+            #jCarouselLiteDemo .carousel a:hover, #jCarouselLiteDemo .carousel a:active {
+                border: none;
+                outline: none;
+            }                 
+    #jCarouselLiteDemo .carousel .jCarouselLite {
+        border: 1px solid black;
+        float: left;
+        background-color: #dfdfdf;
+        
+        /* Needed for rendering without flicker */
+        position: relative;
+        visibility: hidden;
+        left: -5000px;
+    }
+        #jCarouselLiteDemo .carousel ul {
+            margin: 0;
+        }
+        #jCarouselLiteDemo .carousel li img, 
+        #jCarouselLiteDemo .carousel li p {
+            background-color: #fff;
+            width: 150px;
+            height: 118px;
+            margin: 10px;
+        }
+        
+        #jCarouselLiteDemo .widget img {
+            cursor: pointer;
+        }
+            #jCarouselLiteDemo .mid {
+                margin-left: 80px;
+                width: 400px;
+                height: 300px;
+            }
+            #jCarouselLiteDemo .vertical {
+                margin-left: 170px;
+            }
+                #jCarouselLiteDemo .vertical .jCarouselLite {   /* so that in IE 6, the carousel div doesnt expand to fill the space */
+                    width: 170px;
+                }
+            #jCarouselLiteDemo .imageSlider li img, 
+            #jCarouselLiteDemo .imageSlider li p, 
+            #jCarouselLiteDemo .imageSliderExt li img , 
+            #jCarouselLiteDemo .imageSliderExt li p {
+                width: 400px;
+                height: 300px;
+            }
+            
+/*_____________________________________________ End - Projects - jCarouselLiteDemo _____________________________________________*/
+.list_carousel {
+		
+				width: 100%;
+			}
+			.list_carousel ul {
+			
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+				
+				width: 50px;
+				height: 50px;
+				
+				
+				display: block;
+				float: left;
+			}
+
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				float: left;
+				margin-left: 10px;
+			}
+			.next {
+				float: right;
+				margin-right: 10px;
+			}
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+			
+			#scrollbar1 {  margin: 20px 0 10px; }
+#scrollbar1 .viewport { height: 96%; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0;  margin: 0; padding:10px;}
+#scrollbar1 .scrollbar{ background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track { background: transparent url(images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
